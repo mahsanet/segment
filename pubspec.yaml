@@ -1,0 +1,97 @@
+name: segment
+description: "An app for freedom of internet"
+publish_to: 'none'
+version: 1.0.0
+
+environment:
+  sdk: ^3.5.0
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # Localization and Language
+  flutter_localizations:
+    sdk: flutter
+  intl: 0.20.2
+
+  # State Management & Dependency Injection
+  flutter_riverpod: 2.6.1
+
+  # Routing
+  go_router: 15.1.2
+
+  # UI utils
+  cupertino_icons: 1.0.8
+  flutter_svg: 2.1.0
+  flutter_screenutil: 5.9.3
+
+  # Utils
+  equatable: 2.0.7
+  path_provider: 2.1.5
+  package_info_plus: 8.3.0
+  url_launcher: 6.3.1
+
+  # Local Storage
+  hive: 2.2.3
+  shared_preferences: 2.5.3
+
+  # Native Libs
+  proxy_core:
+    git:
+      url: https://github.com/mahsanet/proxy_core_private.git
+      ref: 6.9.6
+
+  proxy_url_parser:
+    git:
+      url: https://github.com/mahsanet/proxy_url_parser_private.git
+
+  bitsdojo_window: 0.1.6
+  flutter_launcher_icons: 0.14.3
+  flutter_native_splash: 2.4.6
+  socks5_proxy:
+    git:
+      url: https://github.com/lacticwhale/socks_dart.git
+      ref: lookup
+
+dev_dependencies:
+
+  # Tests and Testers
+  flutter_test:
+    sdk: flutter
+
+  integration_test:
+    sdk: flutter
+
+  #  patrol: 3.15.1
+  patrol_finders: 2.8.2
+
+  # Linters and Code Stylists
+  flutter_lints: 6.0.0
+
+  # Runners and Generators
+  build_runner: 2.4.15
+  flutter_gen: 5.10.0
+  flutter_gen_runner: 5.10.0
+  go_router_builder: 2.9.0
+  ffigen: 19.0.0
+
+
+flutter:
+  generate: true
+  uses-material-design: true
+  assets:
+    - assets/images/
+    - assets/icons/
+
+  fonts:
+    - family: Lato
+      fonts:
+        - asset: assets/fonts/Lato-Black.ttf
+          weight: 900
+        - asset: assets/fonts/Lato-Bold.ttf
+          weight: 700
+        - asset: assets/fonts/Lato-Light.ttf
+          weight: 300
+        - asset: assets/fonts/Lato-Regular.ttf
+          weight: 400

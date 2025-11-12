@@ -1,0 +1,14 @@
+{
+  "@@locale": "en",
+  "wordContinue": "Continue",
+  "noConfigImportedText": "To connect to unrestricted internet,\nyou need a config link or json config.",
+  "wordImport": "Import",
+  "wordSubmit": "Submit",
+  "neverMind": "Never mind",
+  "checkInternetConnection": "Check your internet connection status !",
+  "slideToDisconnect": "Slide to disconnect",
+  "activeTimeText": "ACTIVE TIME",
+  "addYourConfig": "Add your config",
+  "hasActiveSub_MainScreen": "To improve the connection conditions, \nyou can always import another config.",
+  "anErrorHappened": "An error happened"
+}
