@@ -40,12 +40,12 @@ final goRouterProvider = Provider<GoRouter>((ref) {
         path: logsScreenName,
       ),
     ])
-class MainRoute extends GoRouteData {
+class MainRoute extends GoRouteData with $MainRoute {
   @override
   Widget build(BuildContext context, GoRouterState state) => const MainScreen();
 }
 
-class LogsRoute extends GoRouteData {
+class LogsRoute extends GoRouteData with $LogsRoute {
   @override
   Widget build(BuildContext context, GoRouterState state) => const LogsScreen();
 }

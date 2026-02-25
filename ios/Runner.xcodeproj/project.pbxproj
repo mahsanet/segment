@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 54;
+	objectVersion = 70;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -16,10 +16,11 @@
 		97C146FC1CF9000F007C117D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 97C146FA1CF9000F007C117D /* Main.storyboard */; };
 		97C146FE1CF9000F007C117D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 97C146FD1CF9000F007C117D /* Assets.xcassets */; };
 		97C147011CF9000F007C117D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 97C146FF1CF9000F007C117D /* LaunchScreen.storyboard */; };
+		A0594B422F38C73A00012A8E /* Tun2SocksKit in Frameworks */ = {isa = PBXBuildFile; productRef = A0594B412F38C73A00012A8E /* Tun2SocksKit */; };
+		A0594B442F38C73A00012A8E /* Tun2SocksKitC in Frameworks */ = {isa = PBXBuildFile; productRef = A0594B432F38C73A00012A8E /* Tun2SocksKitC */; };
 		A05B06D92D9F011C00D38F67 /* NetworkExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A05B06D82D9F011C00D38F67 /* NetworkExtension.framework */; };
 		A0739AD92DC2772700788DF8 /* ProxyCoreKit in Frameworks */ = {isa = PBXBuildFile; productRef = A0739AD82DC2772700788DF8 /* ProxyCoreKit */; };
 		A0B7E26E2DA1A3F7009F9EE0 /* PacketTunnel.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = A05B06D72D9F011C00D38F67 /* PacketTunnel.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		A0B7E2CA2DA1B170009F9EE0 /* Tun2SocksKit in Frameworks */ = {isa = PBXBuildFile; productRef = A0B7E2C92DA1B170009F9EE0 /* Tun2SocksKit */; };
 		B13D07622DF05C8400F68C2A /* ProxyCoreKit in Frameworks */ = {isa = PBXBuildFile; productRef = B13D07612DF05C8400F68C2A /* ProxyCoreKit */; };
 		D3B80143E7ED55508B350065 /* Pods_Runner.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3DDFA196384E5621506FFE3 /* Pods_Runner.framework */; };
 /* End PBXBuildFile section */
@@ -107,7 +108,7 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
-		A05B06E22D9F011C00D38F67 /* Exceptions for "PacketTunnel" folder in "PacketTunnel" target */ = {
+		A05B06E22D9F011C00D38F67 /* PBXFileSystemSynchronizedBuildFileExceptionSet */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
 				Info.plist,
@@ -117,18 +118,7 @@
 /* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		A05B06DA2D9F011C00D38F67 /* PacketTunnel */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			exceptions = (
-				A05B06E22D9F011C00D38F67 /* Exceptions for "PacketTunnel" folder in "PacketTunnel" target */,
-			);
-			explicitFileTypes = {
-			};
-			explicitFolders = (
-			);
-			path = PacketTunnel;
-			sourceTree = "<group>";
-		};
+		A05B06DA2D9F011C00D38F67 /* PacketTunnel */ = {isa = PBXFileSystemSynchronizedRootGroup; exceptions = (A05B06E22D9F011C00D38F67 /* PBXFileSystemSynchronizedBuildFileExceptionSet */, ); explicitFileTypes = {}; explicitFolders = (); path = PacketTunnel; sourceTree = "<group>"; };
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -146,8 +136,9 @@
 			files = (
 				B13D07622DF05C8400F68C2A /* ProxyCoreKit in Frameworks */,
 				A0739AD92DC2772700788DF8 /* ProxyCoreKit in Frameworks */,
+				A0594B442F38C73A00012A8E /* Tun2SocksKitC in Frameworks */,
 				3A388E262DB53B580026F3A6 /* libresolv.9.tbd in Frameworks */,
-				A0B7E2CA2DA1B170009F9EE0 /* Tun2SocksKit in Frameworks */,
+				A0594B422F38C73A00012A8E /* Tun2SocksKit in Frameworks */,
 				A05B06D92D9F011C00D38F67 /* NetworkExtension.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -311,9 +302,10 @@
 			);
 			name = PacketTunnel;
 			packageProductDependencies = (
-				A0B7E2C92DA1B170009F9EE0 /* Tun2SocksKit */,
 				A0739AD82DC2772700788DF8 /* ProxyCoreKit */,
 				B13D07612DF05C8400F68C2A /* ProxyCoreKit */,
+				A0594B412F38C73A00012A8E /* Tun2SocksKit */,
+				A0594B432F38C73A00012A8E /* Tun2SocksKitC */,
 			);
 			productName = PacketTunnel;
 			productReference = A05B06D72D9F011C00D38F67 /* PacketTunnel.appex */;
@@ -353,8 +345,8 @@
 			);
 			mainGroup = 97C146E51CF9000F007C117D;
 			packageReferences = (
-				A0B7E2C82DA1B163009F9EE0 /* XCRemoteSwiftPackageReference "Tun2SocksKit" */,
 				B13D07602DF05C8400F68C2A /* XCRemoteSwiftPackageReference "ProxyCoreKit" */,
+				A0594B402F38C73A00012A8E /* XCRemoteSwiftPackageReference "Tun2SocksKit" */,
 			);
 			productRefGroup = 97C146EF1CF9000F007C117D /* Products */;
 			projectDirPath = "";
@@ -442,9 +434,13 @@
 			inputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-Runner/Pods-Runner-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
+			inputPaths = (
+			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-Runner/Pods-Runner-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -496,9 +492,13 @@
 			inputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-Runner/Pods-Runner-resources-${CONFIGURATION}-input-files.xcfilelist",
 			);
+			inputPaths = (
+			);
 			name = "[CP] Copy Pods Resources";
 			outputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-Runner/Pods-Runner-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -1062,12 +1062,12 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		A0B7E2C82DA1B163009F9EE0 /* XCRemoteSwiftPackageReference "Tun2SocksKit" */ = {
+		A0594B402F38C73A00012A8E /* XCRemoteSwiftPackageReference "Tun2SocksKit" */ = {
 			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/EbrahimTahernejad/Tun2SocksKit.git";
+			repositoryURL = "https://github.com/EbrahimTahernejad/Tun2SocksKit";
 			requirement = {
 				kind = upToNextMajorVersion;
-				minimumVersion = 4.9.1;
+				minimumVersion = 5.14.4;
 			};
 		};
 		B13D07602DF05C8400F68C2A /* XCRemoteSwiftPackageReference "ProxyCoreKit" */ = {
@@ -1075,20 +1075,25 @@
 			repositoryURL = "https://github.com/mahsanet/ProxyCoreKit.git";
 			requirement = {
 				kind = exactVersion;
-				version = 6.9.6;
+				version = 7.0.3;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		A0594B412F38C73A00012A8E /* Tun2SocksKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A0594B402F38C73A00012A8E /* XCRemoteSwiftPackageReference "Tun2SocksKit" */;
+			productName = Tun2SocksKit;
+		};
+		A0594B432F38C73A00012A8E /* Tun2SocksKitC */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A0594B402F38C73A00012A8E /* XCRemoteSwiftPackageReference "Tun2SocksKit" */;
+			productName = Tun2SocksKitC;
+		};
 		A0739AD82DC2772700788DF8 /* ProxyCoreKit */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = ProxyCoreKit;
-		};
-		A0B7E2C92DA1B170009F9EE0 /* Tun2SocksKit */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = A0B7E2C82DA1B163009F9EE0 /* XCRemoteSwiftPackageReference "Tun2SocksKit" */;
-			productName = Tun2SocksKit;
 		};
 		B13D07612DF05C8400F68C2A /* ProxyCoreKit */ = {
 			isa = XCSwiftPackageProductDependency;

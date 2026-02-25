@@ -13,46 +13,56 @@ List<RouteBase> get $appRoutes => [
 RouteBase get $mainRoute => GoRouteData.$route(
       path: '/main',
       name: 'main',
-      factory: $MainRouteExtension._fromState,
+      factory: $MainRoute._fromState,
       routes: [
         GoRouteData.$route(
           path: 'logs',
           name: 'logs',
-          factory: $LogsRouteExtension._fromState,
+          factory: $LogsRoute._fromState,
         ),
       ],
     );
 
-extension $MainRouteExtension on MainRoute {
+mixin $MainRoute on GoRouteData {
   static MainRoute _fromState(GoRouterState state) => MainRoute();
 
+  @override
   String get location => GoRouteData.$location(
         '/main',
       );
 
+  @override
   void go(BuildContext context) => context.go(location);
 
+  @override
   Future<T?> push<T>(BuildContext context) => context.push<T>(location);
 
+  @override
   void pushReplacement(BuildContext context) =>
       context.pushReplacement(location);
 
+  @override
   void replace(BuildContext context) => context.replace(location);
 }
 
-extension $LogsRouteExtension on LogsRoute {
+mixin $LogsRoute on GoRouteData {
   static LogsRoute _fromState(GoRouterState state) => LogsRoute();
 
+  @override
   String get location => GoRouteData.$location(
         '/main/logs',
       );
 
+  @override
   void go(BuildContext context) => context.go(location);
 
+  @override
   Future<T?> push<T>(BuildContext context) => context.push<T>(location);
 
+  @override
   void pushReplacement(BuildContext context) =>
       context.pushReplacement(location);
 
+  @override
   void replace(BuildContext context) => context.replace(location);
 }

@@ -1,13 +1,13 @@
 {
-  "originHash" : "a671b394d0a23e308af7349b44c681ea0e4bb943fca541f5664c2666c79483ac",
+  "originHash" : "67ec6b2ca92a83c948a42fbb987101e6d2c418b6b563a0e6ce8b50261ecab58e",
   "pins" : [
     {
       "identity" : "proxycorekit",
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/mahsanet/ProxyCoreKit.git",
       "state" : {
-        "revision" : "09931326e201d3f0ec435273e0065b7a97054f3c",
-        "version" : "6.9.6"
+        "revision" : "8999087e6d3e268ef62c6fecc9bf9e0e5682d4ad",
+        "version" : "7.0.3"
       }
     },
     {
@@ -15,8 +15,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/EbrahimTahernejad/Tun2SocksKit.git",
       "state" : {
-        "revision" : "fce247269a041efe3518a17c1f7d44543d62dec5",
-        "version" : "4.9.1"
+        "revision" : "3f67c36463e4714c6f26307583bcd2248088b1a3",
+        "version" : "5.14.4"
       }
     }
   ],
